@@ -123,7 +123,7 @@ async def from_to(call: types.CallbackQuery, state: FSMContext):
     await Converter.next()
 
 
-@dp.callback_query_handler(text_contains="KT", state=Converter.from_cur)
+@dp.callback_query_handler(text_contains="KZT", state=Converter.from_cur)
 async def from_to(call: types.CallbackQuery, state: FSMContext):
     await call.answer(cache_time=60)
     callback_data = call.data
